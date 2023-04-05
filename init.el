@@ -1,5 +1,6 @@
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
 
 (define-key global-map (kbd "C-x k") #'kill-this-buffer)
 (define-key global-map (kbd "C-x K") #'kill-buffer-and-window)
@@ -167,3 +168,21 @@
 (csetq ediff-diff-options "-w")
 (winner-mode)
 (add-hook 'ediff-after-quit-hook-internal 'winner-undo)
+
+
+(use-package vertico
+  :ensure t
+  :bind (:map vertico-map
+              ("C-s" . vertico-next)
+              ("C-r" . vertico-previous))
+  :custom
+  (vertico-cycle t)
+  :init
+  (vertico-mode)
+  (savehist-mode))
+
+(use-package marginalia
+  :after vertico
+  :ensure t
+  :init
+  (marginalia-mode))
