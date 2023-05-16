@@ -1,0 +1,87 @@
+// Place your key bindings in this file to override the defaults
+[
+// INTER
+    {
+        "key": "alt-o",
+        "command": "workbench.action.navigateEditorGroups"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build",
+        "when": "taskCommandsRegistered"
+    },
+    {
+        "key": "ctrl+x ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl-x ctrl-e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "ctrl-x ctrl-g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "ctrl-x ctrl-d",
+        "command": "workbench.view.debug"
+    },
+    {
+        "key": "ctrl-x ctrl-a",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"    
+    },
+    {
+        "key": "ctrl-shift-tab",
+        "command": "workbench.action.previousEditor"
+    },
+
+// TERMINAL
+    {
+        "key": "ctrl-x ctrl-t",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl-x ctrl-t",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+
+// EDITING
+    {
+        "key": "alt-shift-f",
+        "command": "cursorWordEndRightSelect"
+    },
+    {
+        "key": "alt-shift-b",
+        "command": "cursorWordEndLeftSelect"
+    },
+    {
+        "key": "ctrl-t",
+        "command": "editor.action.transpose"
+    },
+    {
+        "key": "ctrl-x [",
+        "command": "emacs-mcx.beginningOfBuffer"
+    },
+    {
+        "key": "ctrl-x ]",
+        "command": "emacs-mcx.endOfBuffer"
+    },
+    {
+        "key": "alt-u",
+        "command": "undo",
+    }
+]

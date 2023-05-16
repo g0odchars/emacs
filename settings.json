@@ -1,0 +1,26 @@
+// Packages
+// Awesome Emacs Keymap
+
+{
+    // looks
+    "editor.cursorStyle": "block",
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#ffff00",
+    },
+    
+    // terminal
+    "terminal.integrated.env.linux": {
+       "VSCODE_TERM": "true"
+    },
+    
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen"
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    
+    // vim
+    "vim.handleKeys": {
+        "<C-w>": false
+    }
+
+}
